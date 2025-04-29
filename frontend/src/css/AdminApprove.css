@@ -1,0 +1,48 @@
+.approve-restaurant-wrapper {
+    margin-left: 250px; /* match your sidebar width */
+    padding: 40px;
+    background-color: #f8f8f8;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .restaurant-card {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  .button-group {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .approve-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .reject-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .approve-btn:hover {
+    background-color: #218838;
+  }
+  
+  .reject-btn:hover {
+    background-color: #c82333;
+  }
+  

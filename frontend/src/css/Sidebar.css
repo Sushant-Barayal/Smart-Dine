@@ -1,0 +1,38 @@
+.sidebar {
+    width: 220px;
+    min-height: 100vh;
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .sidebar-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #f8f9fa;
+  }
+  
+  .sidebar-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-links li {
+    margin-bottom: 15px;
+  }
+  
+  .sidebar-links li a {
+    color: #adb5bd;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .sidebar-links li.active a,
+  .sidebar-links li a:hover {
+    color: #fff;
+  }
+  

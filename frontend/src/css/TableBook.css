@@ -1,0 +1,447 @@
+/* TableBook.css */
+
+/* Main booking container layout */
+.booking-container {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .booking-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  /* Layout for the booking page - side by side */
+  .reservation-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  
+  /* Floor plan styles */
+  .floor-plan-wrapper {
+    flex: 1;
+    max-width: 60%;
+    background-color: #f9f6f0;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .floor-plan-container {
+    position: relative;
+  }
+  
+  .floor-plan-container img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Table grid layout */
+  .table-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  /* Table boxes */
+  .table-box {
+    position: relative;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .table-box.available {
+    background-color: #e0f7ea;
+    border: 2px solid #28a745;
+    color: #28a745;
+  }
+  
+  .table-box.occupied {
+    background-color: #ffe0e0;
+    border: 2px solid #dc3545;
+    color: #dc3545;
+    cursor: not-allowed;
+  }
+  
+  .table-box.selected {
+    background-color: #cce5ff;
+    border: 2px solid #007bff;
+    color: #007bff;
+  }
+  
+  .table-number {
+    font-size: 1.4rem;
+  }
+  
+  /* Table legend */
+  .table-legend {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .legend-box {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+  }
+  
+  .legend-box.available {
+    background-color: #e0f7ea;
+    border: 1px solid #28a745;
+  }
+  
+  .legend-box.occupied {
+    background-color: #ffe0e0;
+    border: 1px solid #dc3545;
+  }
+  
+  .legend-box.selected {
+    background-color: #cce5ff;
+    border: 1px solid #007bff;
+  }
+  
+  /* Booking form styles */
+  .booking-form-container {
+    flex: 1;
+    max-width: 40%;
+  }
+  
+  .booking-form-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-form-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    position: relative;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .table-number-badge {
+    background-color: #007bff;
+    color: white;
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-right: 0.8rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.2rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .custom-input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+  }
+  
+  .custom-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+  }
+  
+  .input-with-icon {
+    position: relative;
+  }
+  
+  .input-with-icon i {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+  }
+  
+  /* Menu selection styles */
+  .menu-section {
+    margin-top: 1.5rem;
+  }
+  
+  .menu-items-container {
+    max-height: 180px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.5rem;
+    background-color: #f9f9f9;
+  }
+  
+  .menu-item-checkbox {
+    padding: 0.5rem 0.7rem;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.1s;
+  }
+  
+  .menu-item-checkbox:last-child {
+    border-bottom: none;
+  }
+  
+  .menu-item-checkbox:hover {
+    background-color: #f0f8ff;
+  }
+  
+  .menu-item-checkbox input[type="checkbox"] {
+    margin-right: 0.8rem;
+    transform: scale(1.2);
+  }
+  
+  .menu-item-checkbox label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  
+  .menu-item-name {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .menu-item-price {
+    font-weight: 600;
+    color: #e74c3c;
+  }
+  
+  /* Button styles */
+  .booking-form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.8rem;
+  }
+  
+  .btn-confirm {
+    flex: 2;
+    padding: 0.8rem 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-confirm:hover {
+    background-color: #218838;
+  }
+  
+  .btn-confirm:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  .btn-cancel {
+    flex: 1;
+    padding: 0.8rem 1rem;
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-cancel:hover {
+    background-color: #e2e6ea;
+  }
+  
+  /* Booking message */
+  .booking-message {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+    background-color: #d4edda;
+    color: #155724;
+    text-align: center;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .reservation-content {
+      flex-direction: column;
+    }
+    
+    .floor-plan-wrapper,
+    .booking-form-container {
+      max-width: 100%;
+    }
+  }
+  
+  /* Restaurant selection and date/time picker styles */
+  .restaurant-selection {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    text-align: center;
+  }
+  
+  .restaurant-dropdown {
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+  }
+  
+  .date-time-section {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem auto;
+    max-width: 600px;
+  }
+  
+  .date-time-section .form-group {
+    flex: 1;
+  }
+  
+  /* Loading spinner */
+  .loading-spinner {
+    padding: 2rem;
+    text-align: center;
+    color: #6c757d;
+  }
+
+/* Custom layout tweaks */
+.left-panel {
+    flex: 1;
+    max-width: 35%;
+    padding-right: 1rem;
+  }
+  
+  .right-panel {
+    flex: 1;
+    max-width: 65%;
+    padding-left: 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #444;
+  }
+  
+  .form-section {
+    margin-top: 2rem;
+  }
+  
+  /* Responsive stack */
+  @media (max-width: 992px) {
+    .reservation-content {
+      flex-direction: column;
+    }
+  
+    .left-panel,
+    .right-panel {
+      max-width: 100%;
+      padding: 0;
+    }
+  
+    .form-section {
+      margin-top: 2rem;
+    }
+  }
+  .preorder-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+  .preorder-popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 700px;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  .preorder-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .preorder-card {
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .preorder-card.selected {
+    background-color: #e7f9ec;
+    border-color: #28a745;
+  }
+  
+  .preorder-card input[type='checkbox'] {
+    margin-top: 10px;
+  }
+  

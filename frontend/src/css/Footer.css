@@ -1,0 +1,152 @@
+/* Root Layout Fixes */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  #root {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-content {
+    flex: 1 0 auto;
+  }
+  
+  /* Wrapper padding */
+  .footer-wrapper {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 3rem;
+  }
+  
+  /* ===== Footer Styles ===== */
+  .footer-container {
+    background-color: #8c6d57;
+    color: #f9f5f0;
+    padding: 0.5rem 0;  /* ✅ Minimal vertical space */
+    width: 100%;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.5rem 0;
+    gap: 4rem;  /* ✅ More space between columns */
+    width: 100%;
+  }
+  
+  /* Each Column */
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    padding: 0 1rem;
+  }
+  
+  /* Headings */
+  .footer-heading {
+    font-size: 1.3rem; /* ✅ Bigger font */
+    margin-bottom: 0.6rem;
+    position: relative;
+    font-weight: 600;
+  }
+  
+  .footer-heading:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 35px;
+    height: 2px;
+    background-color: #e6d2c0;
+  }
+  
+  /* Paragraph Text */
+  .footer-text {
+    line-height: 1.5;
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  /* Links */
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0.3rem 0 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 0.4rem;
+  }
+  
+  .footer-links a {
+    color: #f9f5f0;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #e6d2c0;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.4rem;
+  }
+  
+  .social-icons a {
+    color: #f9f5f0;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #e6d2c0;
+  }
+  
+  /* Divider Line */
+  .footer-divider {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 0.3rem 0;
+  }
+  
+  /* Bottom Text */
+  .footer-copyright {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0.4rem 0;
+  }
+  
+  .footer-copyright p {
+    margin: 0;
+  }
+  
+  /* ===== Responsive ===== */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .footer-section {
+      margin-bottom: 1rem;
+    }
+  
+    .footer-section:last-child {
+      margin-bottom: 0;
+    }
+  }
+  

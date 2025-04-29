@@ -1,0 +1,79 @@
+.admin-main-content {
+    margin-left: 260px;
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  .admin-main-content h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 600;
+  }
+  
+  .admin-user-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .admin-user-table th,
+  .admin-user-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .admin-user-table th {
+    background-color: #f2f2f2;
+    font-weight: 600;
+  }
+  
+  .deactivate-btn {
+    background-color: #d9534f;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .deactivate-btn:hover {
+    background-color: #c9302c;
+  }
+
+  .filter-container {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .filter-select {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .deactivate-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .reactivate-btn {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 4px;
+  }
+  
